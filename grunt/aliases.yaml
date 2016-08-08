@@ -1,0 +1,3 @@
+default:
+    - 'connect:localhost'
+    - 'watch:html'

@@ -1,0 +1,18 @@
+{
+	"name": "markoops__index-grunt",
+	"version": "0.0.1",
+	"description": "Markoops index site",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://bitbucket.org/vector__projection/markoops__index-grunt"
+	},
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"load-grunt-config": "^0.19.2",
+		"grunt-contrib-connect": "^1.0.2",
+		"grunt-contrib-jshint": "^1.0.0",
+		"grunt-contrib-watch": "^1.0.0",
+		"grunt-assemble": "^0.4.0"
+	}
+}
