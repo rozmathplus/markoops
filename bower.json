@@ -1,0 +1,6 @@
+{
+    "name": "markoops__index-grunt",
+    "devDependencies": {
+        "livereload-js": "^2.2.1"
+    }
+}
