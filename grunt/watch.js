@@ -7,10 +7,14 @@ module.exports = {
         tasks: ['assemble:allTemplates']
     },
     scripts: {
-    	files: ['<%= dev %>/js/**/*.js'],
-    	tasks: ['jshint'],
-    	options: {
-    		interrupt: true
-    	}
+        files: ['<%= dev %>/scripts/**/*.js'],
+        tasks: ['jshint'],
+        options: {
+            interrupt: true
+        }
+    },
+    styles: {
+        files: ['<%= dev %>/styles/**/*.scss'],
+        tasks: ['sass:sass']
     }
 };
