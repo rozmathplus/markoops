@@ -2,19 +2,26 @@ module.exports = {
     options: {
         sourcemap: 'auto'
     },
-    prioritizedSassComponents: {
-    	files: {
-    		'<%= temp %>/prioritizedBootstrap.css': '<%= styles %>/bootstrap/prioritizedBootstrap.scss'
-    	}
-    },
-    notPrioritizedSassComponents: {
-    	files: {
-    		'<%= temp %>/notPrioritizedBootstrap.css': '<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'
-    	}
-    },
-    sass: {
+    // Bootstrap
+    stylesPrioritizedBootstrap: {
         files: {
-            '<%= temp %>/main.css': '<%= styles %>/main.scss'
-        },
+            '<%= temp %>/prioritizedBootstrap.css': '<%= styles %>/bootstrap/prioritizedBootstrap.scss'
+        }
+    },
+    stylesNotPrioritizedBootstrap: {
+        files: {
+            '<%= temp %>/notPrioritizedBootstrap.css': '<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'
+        }
+    },
+    // Main styles
+    stylesPrioritizedMain: {
+        files: {
+            '<%= temp %>/prioritized.css': '<%= styles %>/prioritized.scss'
+        }
+    },
+    stylesNotPrioritizedMain: {
+        files: {
+            '<%= temp %>/notPrioritized.css': '<%= styles %>/notPrioritized.scss'
+        }
     }
 };

@@ -1,0 +1,21 @@
+@import 'customVariables';
+
+
+body {
+	background-color: $footer-bg;
+}
+
+header {
+	background-color: $header-bg;
+	color: $header-color;
+}
+
+main {
+	background-color: $main-bg;
+	color: $main-color;
+}
+
+footer {
+	background-color: $footer-bg;
+	color: $footer-color;
+}

@@ -8,21 +8,29 @@ module.exports = {
         tasks: ['assemble:pages']
     },
     // Main
-    styles: {
-        files: ['<%= styles %>/**/*.scss', '!<%= styles %>/bootstrap/**/*.scss'],
-        tasks: ['sass:sass']
+    stylesCustomMain: {
+        files: ['<%= styles %>/_customVariables.scss'],
+        tasks: ['sass:stylesPrioritizedMain', 'sass:stylesNotPrioritizedMain']
+    },
+    stylesPrioritizedMain: {
+        files: ['<%= styles %>/prioritized/**/*.scss', '<%= styles %>/prioritized.scss'],
+        tasks: ['sass:stylesPrioritizedMain']
+    },
+    stylesNotPrioritizedMain: {
+        files: ['<%= styles %>/notPrioritized/**/*.scss', '<%= styles %>/notPrioritized.scss'],
+        tasks: ['sass:stylesNotPrioritizedMain']
     },
     // Bootstrap
     stylesCustomBootstrap: {
         files: ['<%= styles %>/bootstrap/custom.scss'],
-        tasks: ['sass:prioritizedSassComponents', 'sass:notPrioritizedSassComponents']
+        tasks: ['sass:stylesNotPrioritizedBootstrap', 'sass:stylesPrioritizedBootstrap']
     },
     stylesPrioritizedBootstrap: {
         files: ['<%= styles %>/bootstrap/prioritizedBootstrap.scss'],
-        tasks: ['sass:prioritizedSassComponents']
+        tasks: ['sass:stylesPrioritizedBootstrap']
     },
     stylesNotPrioritizedBootstrap: {
         files: ['<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'],
-        tasks: ['sass:notPrioritizedSassComponents']
+        tasks: ['sass:stylesNotPrioritizedBootstrap']
     }
 };

@@ -1,5 +1,5 @@
 module.exports = {
 	default: {
-        include: ['html', 'styles', 'stylesCustomBootstrap', 'stylesPrioritizedBootstrap', 'stylesNotPrioritizedBootstrap']
+        include: ['html', 'stylesCustomMain', 'stylesPrioritizedMain', 'stylesNotPrioritizedMain', 'stylesCustomBootstrap', 'stylesPrioritizedBootstrap', 'stylesNotPrioritizedBootstrap']
     }
 };

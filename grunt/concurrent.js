@@ -2,9 +2,10 @@ module.exports = {
 	devProcess: {
 		tasks: [
 			'assemble:pages',
-			'sass:prioritizedSassComponents',
-			'sass:notPrioritizedSassComponents',
-			'sass:sass'
+			'sass:stylesPrioritizedBootstrap',
+			'sass:stylesNotPrioritizedBootstrap',
+			'sass:stylesPrioritizedMain',
+			'sass:stylesNotPrioritizedMain'
 		]
 	}
 }
