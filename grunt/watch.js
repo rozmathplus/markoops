@@ -2,24 +2,27 @@ module.exports = {
 	options: {
 		livereload: true
 	},
+    // hbs
     html: {
         files: ['<%= dev %>/templates/**/*.hbs'],
-        tasks: ['assemble:allTemplates']
+        tasks: ['assemble:pages']
     },
+    // Main
     styles: {
-        files: ['<%= styles %>/**/*.scss', '!<%= stylesComponents %>/**/*.scss'],
+        files: ['<%= styles %>/**/*.scss', '!<%= styles %>/bootstrap/**/*.scss'],
         tasks: ['sass:sass']
     },
+    // Bootstrap
     stylesCustomBootstrap: {
-        files: ['<%= stylesComponents %>/bootstrap/custom.scss'],
+        files: ['<%= styles %>/bootstrap/custom.scss'],
         tasks: ['sass:prioritizedSassComponents', 'sass:notPrioritizedSassComponents']
     },
     stylesPrioritizedBootstrap: {
-        files: ['<%= stylesComponents %>/bootstrap/prioritizedBootstrap.scss'],
+        files: ['<%= styles %>/bootstrap/prioritizedBootstrap.scss'],
         tasks: ['sass:prioritizedSassComponents']
     },
     stylesNotPrioritizedBootstrap: {
-        files: ['<%= stylesComponents %>/bootstrap/notPrioritizedBootstrap.scss'],
+        files: ['<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'],
         tasks: ['sass:notPrioritizedSassComponents']
     }
 };

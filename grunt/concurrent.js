@@ -1,7 +1,7 @@
 module.exports = {
 	devProcess: {
 		tasks: [
-			'assemble:allTemplates',
+			'assemble:pages',
 			'sass:prioritizedSassComponents',
 			'sass:notPrioritizedSassComponents',
 			'sass:sass'

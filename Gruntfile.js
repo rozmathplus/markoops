@@ -6,8 +6,7 @@ module.exports = function(grunt) {
     		bowerComponents: 'bower_components',
     		temp: 'temp',
     		dev: 'dev',
-    		styles: 'dev/styles',
-    		stylesComponents: 'dev/styles/components'
+    		styles: 'dev/styles'
     	}
     });
 };

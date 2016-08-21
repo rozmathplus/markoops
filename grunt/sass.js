@@ -4,12 +4,12 @@ module.exports = {
     },
     prioritizedSassComponents: {
     	files: {
-    		'<%= temp %>/prioritizedBootstrap.css': '<%= stylesComponents %>/bootstrap/prioritizedBootstrap.scss'
+    		'<%= temp %>/prioritizedBootstrap.css': '<%= styles %>/bootstrap/prioritizedBootstrap.scss'
     	}
     },
     notPrioritizedSassComponents: {
     	files: {
-    		'<%= temp %>/notPrioritizedBootstrap.css': '<%= stylesComponents %>/bootstrap/notPrioritizedBootstrap.scss'
+    		'<%= temp %>/notPrioritizedBootstrap.css': '<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'
     	}
     },
     sass: {

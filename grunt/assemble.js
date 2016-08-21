@@ -5,7 +5,7 @@ module.exports = {
         layoutdir: '<%= dev %>/templates/layouts',
         partials: ['<%= dev %>/templates/parts/**/*.hbs']
     },
-    allTemplates: {
+    pages: {
         files: {
             '<%= temp %>': ['<%= dev %>/templates/pages/**/*.hbs']
         },
