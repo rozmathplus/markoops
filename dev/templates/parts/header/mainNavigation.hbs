@@ -1,5 +1,12 @@
-<ul class="nav">
+<ul class="nav nav-inline">
+
 {{#withSort pages 'data.sortOrder'}}
-	<li><a href="{{this.dest}}">{{data.title}}</a></li>
+	{{!-- {{json data}} --}}
+	{{!-- {{debug}} --}}
+	{{menu this}}
+
+
+
+	{{!-- <li><a href="{{this.relativeLink}}">{{data.title}}</a></li> --}}
 {{/withSort}}
 </ul>

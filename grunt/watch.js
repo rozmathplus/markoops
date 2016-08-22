@@ -5,7 +5,7 @@ module.exports = {
     // hbs
     html: {
         files: ['<%= dev %>/templates/**/*.hbs'],
-        tasks: ['assemble:pages']
+        tasks: ['exec:clearTerminal', 'assemble:pages']
     },
     // Main
     stylesCustomMain: {
