@@ -1,0 +1,5 @@
+<ul class="nav">
+{{#withSort pages 'data.sortOrder'}}
+	<li><a href="{{this.dest}}">{{data.title}}</a></li>
+{{/withSort}}
+</ul>
