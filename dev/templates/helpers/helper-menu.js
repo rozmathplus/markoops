@@ -1,4 +1,6 @@
 module.exports.register = function(Handlebars) {
+	'use strict'
+
     var pagesDefaultFolder = /dev\/templates\/pages\//;
 
     function search(key, array) {
@@ -74,10 +76,11 @@ module.exports.register = function(Handlebars) {
 		// Data to return
 		var data = '';
 		allLevelsCollection[0].forEach(function(firstLvlItem) {
+			var activeClass = firstLvlItem.isCurrentPage ? ' active' : '';
 
 			// for first level
-			data += '<li>';
-			data += '<a href="#">first</a>';
+			data += '<li class="nav-item">';
+			data += '<a class="nav-link' + activeClass + '" href="' + firstLvlItem.basename + '.html">' + firstLvlItem.data.title + '</a>';
 
 			// for second level
 			var childrenSecondLvl = firstLvlItem.children;
@@ -86,32 +89,36 @@ module.exports.register = function(Handlebars) {
 
 				// if item has children
 				if (size) {
-					data += '<ul>';
+					data += '<ul class="second-level">';
 
 					childrenSecondLvl.forEach(function(secondLvlItem) {
+						var activeClass = secondLvlItem.isCurrentPage ? ' active' : '';
+
 						data += '<li>';
-						data += '<a href="#">second</a>';
+						data += '<a class="nav-link' + activeClass + '" href="' + secondLvlItem.basename + '.html">' + secondLvlItem.data.title + '</a>';
 
 						// for third level
 						var childrenThirdLvl = secondLvlItem.children;
 						if (childrenThirdLvl !== undefined) {
 							var size = Object.keys(childrenThirdLvl).length;
 
+							// if item has children
 							if (size) {
-								data += '<ul>';
+								data += '<ul class="third-level">';
 
 								childrenThirdLvl.forEach(function(thirdLvlItem) {
+									var activeClass = thirdLvlItem.isCurrentPage ? ' active' : '';
+									
 									data += '<li>';
-									data += '<a href="#">third</a>';
+									data += '<a class="nav-link' + activeClass + '" href="' + thirdLvlItem.basename + '.html">' + thirdLvlItem.data.title + '</a>';
 									data += '</li>';
 								});
 
 								data += '</ul>';
 							}
 						}
-						// END of third level
-
 						data += '</li>';
+						// END of third level
 					});
 
 					data += '</ul>';
@@ -120,8 +127,8 @@ module.exports.register = function(Handlebars) {
 			}
 			// END of second level
 
-			// END of first level
 			data += '</li>';
+			// END of first level
 		});
 
 		return new Handlebars.SafeString(data);
