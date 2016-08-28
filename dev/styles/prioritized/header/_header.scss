@@ -1,0 +1,11 @@
+header {
+	background-color: $header-bg;
+	color: $header-color;
+}
+.nav-link {
+	color: #fff;
+
+	&.active {
+		color: #f3f321;
+	}
+}

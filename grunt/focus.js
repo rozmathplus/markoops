@@ -1,5 +1,5 @@
 module.exports = {
 	default: {
-        include: ['html', 'stylesCustomMain', 'stylesPrioritizedMain', 'stylesNotPrioritizedMain', 'stylesCustomBootstrap', 'stylesPrioritizedBootstrap', 'stylesNotPrioritizedBootstrap']
+        include: ['jsHelpers', 'html', 'stylesCustomMain', 'stylesPrioritizedMain', 'stylesNotPrioritizedMain', 'stylesCustomBootstrap', 'stylesPrioritizedBootstrap', 'stylesNotPrioritizedBootstrap']
     }
 };

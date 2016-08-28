@@ -2,11 +2,19 @@ module.exports = {
 	options: {
 		livereload: true
 	},
+
+    // JS helpers
+    jsHelpers: {
+        files: ['<%= dev %>/templates/helpers/*.js'],
+        tasks: ['exec:clearTerminal', 'assemble:pages']
+    },
+
     // hbs
     html: {
         files: ['<%= dev %>/templates/**/*.hbs'],
         tasks: ['exec:clearTerminal', 'assemble:pages']
     },
+
     // Main
     stylesCustomMain: {
         files: ['<%= styles %>/_customVariables.scss'],
@@ -20,6 +28,7 @@ module.exports = {
         files: ['<%= styles %>/notPrioritized/**/*.scss', '<%= styles %>/notPrioritized.scss'],
         tasks: ['sass:stylesNotPrioritizedMain']
     },
+
     // Bootstrap
     stylesCustomBootstrap: {
         files: ['<%= styles %>/bootstrap/custom.scss'],

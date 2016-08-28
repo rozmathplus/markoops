@@ -1,14 +1,7 @@
 @import 'customVariables';
 
+@import 'prioritized/header/header';
 
-// body {
-// 	background-color: $footer-bg;
-// }
-
-header {
-	background-color: $header-bg;
-	color: $header-color;
-}
 
 main {
 	background-color: $main-bg;

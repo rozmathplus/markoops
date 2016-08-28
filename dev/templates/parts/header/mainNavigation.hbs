@@ -1,12 +1,7 @@
+{{!-- {{{json pages}}} --}}
 <ul class="nav nav-inline">
 
-{{#withSort pages 'data.sortOrder'}}
-	{{!-- {{json data}} --}}
-	{{!-- {{debug}} --}}
-	{{menu this}}
+	{{!-- using JS handlebar helper "helper-menu.js" --}}
+	{{menu}}
 
-
-
-	{{!-- <li><a href="{{this.relativeLink}}">{{data.title}}</a></li> --}}
-{{/withSort}}
 </ul>
