@@ -73,27 +73,25 @@ module.exports.register = function(Handlebars) {
 			return level.length;
 		});
 
-		var dataToReturn = '';
+		var dataToReturn = '',
+			count = 1;
 		function renderChildren(node) {
-	    	var title = node.data.title;
-	    	dataToReturn += '<li>';
-	    	dataToReturn += '<a href="">' + title + '</a>';
-		    // console.log();
-	    	// console.log(dataToReturn);
-		    // console.log();
+	    	dataToReturn += '<li class="nav-item">';
+	    	dataToReturn += '<a class="nav-link ' + (node.isCurrentPage ? ' active' : '') + '" href="' + node.basename + '.html">' + node.data.title + '</a>';
 
 	    	var children = node.children;
 	    	if (children !== undefined && Object.keys(children).length) {
-	    		dataToReturn += '<ul>';
+	    		count++;
+	    		dataToReturn += '<ul class=level-"' + count + '">';
 	    		children.forEach(function(child) {
 	    			renderChildren(child);
 	    		});
 	    		dataToReturn += '</ul>';
 	    	}
 	    	dataToReturn += '</li>';
+	    	count = 1;
 	    	return dataToReturn;
 	    }
-
 
 	    allLevelsCollection[0].forEach(function(firstLvlItem) {
 	    	renderChildren(firstLvlItem);
