@@ -12,10 +12,10 @@ module.exports.register = function(Handlebars) {
     }
 
 	Handlebars.registerHelper('menu', function() {
-		// var collection = this.pages.slice().sort(function(a, b) {
-		// 		return a.data.sortOrder - b.data.sortOrder;
-		// 	}),
-		var collection = this.pages,
+		var collection = this.pages.slice().sort(function(a, b) {
+				return a.data.sortOrder - b.data.sortOrder;
+			}),
+		// var collection = this.pages,
 			allLevelsCollection = [];
 
 		for (var i in collection) {
@@ -73,64 +73,32 @@ module.exports.register = function(Handlebars) {
 			return level.length;
 		});
 
-		// Data to return
-		var data = '';
-		allLevelsCollection[0].forEach(function(firstLvlItem) {
-			var activeClass = firstLvlItem.isCurrentPage ? ' active' : '';
+		var dataToReturn = '';
+		function renderChildren(node) {
+	    	var title = node.data.title;
+	    	dataToReturn += '<li>';
+	    	dataToReturn += '<a href="">' + title + '</a>';
+		    // console.log();
+	    	// console.log(dataToReturn);
+		    // console.log();
 
-			// for first level
-			data += '<li class="nav-item">';
-			data += '<a class="nav-link' + activeClass + '" href="' + firstLvlItem.basename + '.html">' + firstLvlItem.data.title + '</a>';
+	    	var children = node.children;
+	    	if (children !== undefined && Object.keys(children).length) {
+	    		dataToReturn += '<ul>';
+	    		children.forEach(function(child) {
+	    			renderChildren(child);
+	    		});
+	    		dataToReturn += '</ul>';
+	    	}
+	    	dataToReturn += '</li>';
+	    	return dataToReturn;
+	    }
 
-			// for second level
-			var childrenSecondLvl = firstLvlItem.children;
-			if (childrenSecondLvl !== undefined) {
-				var size = Object.keys(childrenSecondLvl).length;
 
-				// if item has children
-				if (size) {
-					data += '<ul class="second-level">';
+	    allLevelsCollection[0].forEach(function(firstLvlItem) {
+	    	renderChildren(firstLvlItem);
+	    });
 
-					childrenSecondLvl.forEach(function(secondLvlItem) {
-						var activeClass = secondLvlItem.isCurrentPage ? ' active' : '';
-
-						data += '<li>';
-						data += '<a class="nav-link' + activeClass + '" href="' + secondLvlItem.basename + '.html">' + secondLvlItem.data.title + '</a>';
-
-						// for third level
-						var childrenThirdLvl = secondLvlItem.children;
-						if (childrenThirdLvl !== undefined) {
-							var size = Object.keys(childrenThirdLvl).length;
-
-							// if item has children
-							if (size) {
-								data += '<ul class="third-level">';
-
-								childrenThirdLvl.forEach(function(thirdLvlItem) {
-									var activeClass = thirdLvlItem.isCurrentPage ? ' active' : '';
-									
-									data += '<li>';
-									data += '<a class="nav-link' + activeClass + '" href="' + thirdLvlItem.basename + '.html">' + thirdLvlItem.data.title + '</a>';
-									data += '</li>';
-								});
-
-								data += '</ul>';
-							}
-						}
-						data += '</li>';
-						// END of third level
-					});
-
-					data += '</ul>';
-				}
-
-			}
-			// END of second level
-
-			data += '</li>';
-			// END of first level
-		});
-
-		return new Handlebars.SafeString(data);
+	    return new Handlebars.SafeString(dataToReturn);
 	});
 }
