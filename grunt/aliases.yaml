@@ -1,4 +1,5 @@
 default:
     - 'concurrent:devProcess'
     - 'connect:localhost'
+    - 'imagemin:copyImages'
     - 'focus:default'

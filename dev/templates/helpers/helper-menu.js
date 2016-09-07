@@ -18,6 +18,7 @@ module.exports.register = function(Handlebars) {
 		// var collection = this.pages,
 			allLevelsCollection = [];
 
+		// creating new short collection
 		for (var i in collection) {
 			var item = collection[i],
 				element = {},
@@ -41,8 +42,9 @@ module.exports.register = function(Handlebars) {
 			allLevelsCollection[level].push(element);
 		}
 
-		// for each menu level
-		// in descending mode
+		// sorting items in new short collection
+		// to childrens and parents
+		// for each menu level in descending mode
 		for (var i = allLevelsCollection.length - 1; i > 0 ; i--) {
 			var currentLevel = allLevelsCollection[i];
 

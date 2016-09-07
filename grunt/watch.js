@@ -3,8 +3,14 @@ module.exports = {
 		livereload: true
 	},
 
-    // JS helpers
+    // JS grunt components
     jsHelpers: {
+        files: ['<%= dev %>/templates/helpers/*.js'],
+        tasks: ['exec:clearTerminal', 'assemble:pages']
+    },
+
+    // JS helpers
+    jsGruntComponents: {
         files: ['<%= dev %>/templates/helpers/*.js'],
         tasks: ['exec:clearTerminal', 'assemble:pages']
     },
