@@ -2,10 +2,22 @@ header {
 	background-color: $header-bg;
 	color: $header-color;
 }
+
+.nav {
+
+}
+.nav-item {
+	&.active > .nav-link {
+		border-bottom: 4px solid #fff;
+	}
+}
 .nav-link {
 	color: #fff;
+}
 
-	&.active {
-		color: #f3f321;
+// logo
+.logo {
+	img {
+		width: 200px;
 	}
 }
