@@ -4,24 +4,39 @@ module.exports = {
 	},
 
     // JS grunt components
+    jsGruntComponents: {
+        files: ['<%= grunt %>/**/*.js'],
+        tasks: ['exec:clearTerminal', 'assemble:pages']
+    },
+    // problems with this
+
+    // JS helpers
     jsHelpers: {
         files: ['<%= dev %>/templates/helpers/*.js'],
         tasks: ['exec:clearTerminal', 'assemble:pages']
     },
 
-    // JS helpers
-    jsGruntComponents: {
-        files: ['<%= dev %>/templates/helpers/*.js'],
-        tasks: ['exec:clearTerminal', 'assemble:pages']
+    // Scripts
+    jsJquery: {
+        files: ['<%= scripts %>/jquery.js'],
+        tasks: ['exec:clearTerminal', 'import:jquery']
+    },
+    jsBootstrap: {
+        files: ['<%= scripts %>/bootstrap.js'],
+        tasks: ['exec:clearTerminal', 'import:jsBootstrap']
+    },
+    jsMain: {
+        files: ['<%= scripts %>/main.js'],
+        tasks: ['exec:clearTerminal', 'import:jsMain']
     },
 
-    // hbs
+    // Handlebars
     html: {
         files: ['<%= dev %>/templates/**/*.hbs'],
         tasks: ['exec:clearTerminal', 'assemble:pages']
     },
 
-    // Main
+    // Styles
     stylesCustomMain: {
         files: ['<%= styles %>/_customVariables.scss'],
         tasks: ['sass:stylesPrioritizedMain', 'sass:stylesNotPrioritizedMain']
@@ -35,7 +50,7 @@ module.exports = {
         tasks: ['sass:stylesNotPrioritizedMain']
     },
 
-    // Bootstrap
+    // Bootstrap styles
     stylesCustomBootstrap: {
         files: ['<%= styles %>/bootstrap/custom.scss'],
         tasks: ['sass:stylesNotPrioritizedBootstrap', 'sass:stylesPrioritizedBootstrap']

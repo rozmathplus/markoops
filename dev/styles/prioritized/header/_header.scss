@@ -3,6 +3,12 @@ header {
 	color: $header-color;
 }
 
+.navbar {
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+}
 .nav {
 
 }
@@ -12,7 +18,7 @@ header {
 	}
 }
 .nav-link {
-	color: #fff;
+
 }
 
 // logo

@@ -21,6 +21,8 @@
 		"grunt-focus": "1.0.0",
 		"grunt-exec": "1.0.0",
 		"grunt-contrib-imagemin": "1.0.1",
-		"imagemin-mozjpeg": "6.0.0"
+		"imagemin-mozjpeg": "6.0.0",
+		"grunt-contrib-concat": "1.0.1",
+		"grunt-import": "1.0.3"
 	}
 }
