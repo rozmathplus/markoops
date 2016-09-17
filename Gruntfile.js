@@ -3,7 +3,9 @@
 module.exports = function(grunt) {
     require('time-grunt')(grunt, (stats, done) => {
         console.log('Stats:');
-        console.log(stats);
+        stats.forEach(function(item) {
+            console.log('Running "' + item[0] + '" task took ' + item[1] + 'ms');
+        });
 
         done();
     });
@@ -16,8 +18,5 @@ module.exports = function(grunt) {
     		scripts: 'dev/scripts',
     		grunt: 'grunt'
     	}
-    });
-    require('time-grunt')(grunt, (stats, done) => {
-        done();
     });
 };
