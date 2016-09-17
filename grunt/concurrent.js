@@ -5,7 +5,11 @@ module.exports = {
 			'sass:stylesPrioritizedBootstrap',
 			'sass:stylesNotPrioritizedBootstrap',
 			'sass:stylesPrioritizedMain',
-			'sass:stylesNotPrioritizedMain'
+			'sass:stylesNotPrioritizedMain',
+	        'import:jsBootstrap',
+	        'import:jsJquery',
+	        'import:jsMain',
+	        'imagemin:copyImages',
 		]
 	}
 }

@@ -1,8 +1,6 @@
 default:
+    - 'exec:clearTerminal'
+    - 'clean:temp'
     - 'concurrent:devProcess'
     - 'connect:localhost'
-    - 'import:jsBootstrap'
-    - 'import:jsJquery'
-    - 'import:jsMain'
-    - 'imagemin:copyImages'
     - 'focus:default'
