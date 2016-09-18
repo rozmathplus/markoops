@@ -5,5 +5,5 @@ default:
     - 'connect:localhost'
     - 'focus:default'
 
-pushTemp:
+pushSite:
     - 'buildcontrol:pushSite'
