@@ -1,3 +1,8 @@
+var remote = 'git@bitbucket.org:vector__projection/markoops__index-grunt.git';
+
+// change this on each project branch
+var branch = 'init';
+
 'use strict';
 
 module.exports = function(grunt) {
@@ -16,7 +21,9 @@ module.exports = function(grunt) {
     		dev: 'dev',
     		styles: 'dev/styles',
     		scripts: 'dev/scripts',
-    		grunt: 'grunt'
+    		grunt: 'grunt',
+            remote: remote,
+            branch: branch
     	}
     });
 };

@@ -4,3 +4,6 @@ default:
     - 'concurrent:devProcess'
     - 'connect:localhost'
     - 'focus:default'
+
+pushBranch:
+    - 'gitpush: pushBranch'
