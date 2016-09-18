@@ -8,8 +8,8 @@ module.exports = {
     },
     pushTemp: {
         options: {
-        	dir: 'gh-pages',
-        	branch: 'temp'
+        	dir: '<%= temp %>',
+        	branch: 'gh-pages'
         }
     }
 };
