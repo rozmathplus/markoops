@@ -1,4 +1,4 @@
-// https://github.com/rubenv/grunt-git
+// https://github.com/robwierzbowski/grunt-build-control
 module.exports = {
 	options: {
         commit: true,
