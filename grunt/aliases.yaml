@@ -7,3 +7,6 @@ default:
 
 pushBranch:
     - 'gitpush:pushBranch'
+
+pushTemp:
+    - 'bildcontrol:pushTemp'
