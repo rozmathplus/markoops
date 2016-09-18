@@ -5,8 +5,5 @@ default:
     - 'connect:localhost'
     - 'focus:default'
 
-pushBranch:
-    - 'gitpush:pushBranch'
-
 pushTemp:
-    - 'buildcontrol:pushTemp'
+    - 'buildcontrol:pushSite'

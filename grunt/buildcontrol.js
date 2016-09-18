@@ -4,9 +4,9 @@ module.exports = {
         commit: true,
         push: true,
         remote: '<%= remoteRepo %>',
-        message: 'update'
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
     },
-    pushTemp: {
+    pushSite: {
         options: {
         	dir: '<%= temp %>',
         	branch: 'gh-pages'
