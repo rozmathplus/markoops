@@ -1,3 +1,5 @@
+var remoteRepo = 'git@github.com:rozmathplus/markoops.git';
+
 'use strict';
 
 module.exports = function(grunt) {
@@ -16,7 +18,8 @@ module.exports = function(grunt) {
     		dev: 'dev',
     		styles: 'dev/styles',
     		scripts: 'dev/scripts',
-    		grunt: 'grunt'
+    		grunt: 'grunt',
+            remoteRepo: remoteRepo
     	}
     });
 };
