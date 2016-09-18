@@ -8,7 +8,7 @@ module.exports = {
     },
     pushTemp: {
         options: {
-        	dir: '<%= temp %>',
+        	dir: 'gh-pages',
         	branch: 'temp'
         }
     }
