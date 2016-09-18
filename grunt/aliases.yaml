@@ -9,4 +9,4 @@ pushBranch:
     - 'gitpush:pushBranch'
 
 pushTemp:
-    - 'bildcontrol:pushTemp'
+    - 'buildcontrol:pushTemp'
