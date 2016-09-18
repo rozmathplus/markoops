@@ -6,4 +6,4 @@ default:
     - 'focus:default'
 
 pushBranch:
-    - 'gitpush: pushBranch'
+    - 'gitpush:pushBranch'
