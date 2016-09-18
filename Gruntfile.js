@@ -2,7 +2,6 @@ var remote = 'git@bitbucket.org:vector__projection/markoops__index-grunt.git';
 
 // change this on each project branch
 // branch var should be same like local branch title
-var branch = 'test3';
 
 'use strict';
 
