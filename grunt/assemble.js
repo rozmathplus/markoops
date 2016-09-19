@@ -9,6 +9,14 @@ module.exports = {
     pages: {
         files: {
             '<%= temp %>': ['<%= dev %>/templates/pages/**/*.hbs']
-        },
+        }
     },
+    pagesSmall: {
+        options: {
+            layout: 'small.hbs'
+        },
+        files: {
+            '<%= temp %>': ['<%= dev %>/templates/pages/**/*.hbs']
+        }
+    }
 };

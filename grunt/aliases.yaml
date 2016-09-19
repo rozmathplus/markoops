@@ -6,4 +6,6 @@ default:
     - 'focus:default'
 
 pushSite:
+    - 'clean:temp'
+    - 'concurrent:pushSite'
     - 'buildcontrol:pushSite'

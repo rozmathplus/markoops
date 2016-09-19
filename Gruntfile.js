@@ -4,9 +4,11 @@ var remoteRepo = 'git@github.com:rozmathplus/markoops.git';
 
 module.exports = function(grunt) {
     require('time-grunt')(grunt, (stats, done) => {
-        console.log('Stats:');
+        grunt.log.subhead('Stats:')
         stats.forEach(function(item) {
-            console.log('Running "' + item[0] + '" task took ' + item[1] + 'ms');
+            grunt.log.oklns('Running "' + item[0] + '" task took ' + item[1] + 'ms');
+            // Will create file with logs
+            // grunt.file.write('.gruntlog', 'Running "' + item[0] + '" task took ' + item[1] + 'ms' + '\n');
         });
 
         done();
