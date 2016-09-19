@@ -14,3 +14,6 @@ pushSite:
 
 createMinCss:
     - 'cssmin:stylesFooter'
+
+createMinCssHead:
+    - 'cssmin:stylesHead'

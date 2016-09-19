@@ -4,9 +4,14 @@ module.exports = {
         shorthandCompacting: false,
         roundingPrecision: -1
     },
+    stylesHead: {
+        files: [{
+            '<%= temp %>/main.min.css': ['<%= temp %>/prioritizedBootstrap.css', '<%= temp %>/prioritized.css']
+        }]
+    },
     stylesFooter: {
         files: [{
-            '<%= temp %>/general.css': ['<%= temp %>/notPrioritizedBootstrap.css', '<%= temp %>/notPrioritized.css']
+            '<%= temp %>/general.min.css': ['<%= temp %>/notPrioritizedBootstrap.css', '<%= temp %>/notPrioritized.css']
         }]
     }
 };
