@@ -19,6 +19,7 @@ module.exports = {
 			'sass:stylesNotPrioritizedBootstrap',
 			'sass:stylesPrioritizedMain',
 			'sass:stylesNotPrioritizedMain',
+			'cssmin:stylesFooter',
 	        'import:jsBootstrap',
 	        'import:jsJquery',
 	        'import:jsMain',
