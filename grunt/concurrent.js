@@ -27,6 +27,7 @@ module.exports = {
 	},
 	pushSiteSecond: {
 		tasks: [
+			'cssmin:stylesHead',
 			'cssmin:stylesFooter',
 		]
 	}
