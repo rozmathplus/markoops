@@ -7,8 +7,6 @@ module.exports = function(grunt) {
         grunt.log.subhead('Stats:')
         stats.forEach(function(item) {
             grunt.log.oklns('Running "' + item[0] + '" task took ' + item[1] + 'ms');
-            // Will create file with logs
-            // grunt.file.write('.gruntlog', 'Running "' + item[0] + '" task took ' + item[1] + 'ms' + '\n');
         });
 
         done();
