@@ -7,5 +7,6 @@ default:
 
 pushSite:
     - 'clean:temp'
-    - 'concurrent:pushSite'
+    - 'concurrent:pushSiteFirst'
+    - 'concurrent:pushSiteSecond'
     - 'buildcontrol:pushSite'

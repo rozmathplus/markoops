@@ -12,18 +12,22 @@ module.exports = {
 	        'imagemin:copyImages',
 		]
 	},
-	pushSite: {
+	pushSiteFirst: {
 		tasks: [
 			'assemble:pagesSmall',
 			'sass:stylesPrioritizedBootstrap',
 			'sass:stylesNotPrioritizedBootstrap',
 			'sass:stylesPrioritizedMain',
 			'sass:stylesNotPrioritizedMain',
-			'cssmin:stylesFooter',
 	        'import:jsBootstrap',
 	        'import:jsJquery',
 	        'import:jsMain',
 	        'imagemin:copyImages',
+		]
+	}
+	pushSiteSecond: {
+		tasks: [
+			'cssmin:stylesFooter',
 		]
 	}
 }
