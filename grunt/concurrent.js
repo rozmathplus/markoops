@@ -24,7 +24,7 @@ module.exports = {
 	        'import:jsMain',
 	        'imagemin:copyImages',
 		]
-	}
+	},
 	pushSiteSecond: {
 		tasks: [
 			'cssmin:stylesFooter',
