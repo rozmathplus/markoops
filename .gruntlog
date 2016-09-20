@@ -1,1 +1,43 @@
 Running "watch" task took 1126546ms
+>> Running "exec:clearTerminal" task took 14ms
+Grunt and task output will also be logged to ".gruntlog"
+>> Running "clean:temp" task took 13ms
+>> Running "clean:temp" task took 13ms
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+>> Running "concurrent:devProcess" task took 2677ms
+>> Running "concurrent:devProcess" task took 2677ms
+>> Running "concurrent:devProcess" task took 2677ms
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+>> Running "connect:localhost" task took 23ms
+>> Running "connect:localhost" task took 23ms
+>> Running "connect:localhost" task took 23ms
+>> Running "connect:localhost" task took 23ms
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+>> Running "focus:default" task took 5ms
+>> Running "focus:default" task took 5ms
+>> Running "focus:default" task took 5ms
+>> Running "focus:default" task took 5ms
+>> Running "focus:default" task took 5ms
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+>> Running "watch" task took 1845ms
+>> Running "watch" task took 1845ms
+>> Running "watch" task took 1845ms
+>> Running "watch" task took 1845ms
+>> Running "watch" task took 1845ms
+>> Running "watch" task took 1845ms
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"
+Grunt and task output will also be logged to ".gruntlog"

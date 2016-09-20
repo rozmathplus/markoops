@@ -2,6 +2,10 @@ default:
     - 'exec:clearTerminal'
     - 'clean:temp'
     - 'concurrent:devProcess'
+
+    - 'cssmin:stylesHead'
+    - 'something'
+
     - 'connect:localhost'
     - 'focus:default'
 
@@ -9,6 +13,10 @@ pushSite:
     - 'clean:temp'
     - 'concurrent:pushSiteFirst'
     - 'concurrent:pushSiteSecond'
+
+    - 'cssmin:stylesHead'
+    - 'something'
+
     - 'buildcontrol:pushSite'
 
 
@@ -17,3 +25,6 @@ createMinCss:
 
 createMinCssHead:
     - 'cssmin:stylesHead'
+
+readCss:
+    - 'ggrunt:something'
