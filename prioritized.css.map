@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAO;EACN,gBAAgB,ECKL,OAAO;EDJlB,KAAK,ECKS,IAAI;;ADDlB,UAAG;EACF,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;;AAOjB,4BAAqB;EACpB,aAAa,EAAE,cAAc;;AAS9B,SAAI;EACH,KAAK,EAAE,KAAK;;AErBd,IAAK;EACJ,gBAAgB,EDIP,IAAI;;ACAd,MAAO;EAEN,KAAK,EDGS,IAAI",
-"sources": ["../dev/styles/prioritized/header/_header.scss","../dev/styles/_customVariables.scss","../dev/styles/prioritized.scss"],
-"names": [],
-"file": "prioritized.css"
-}
