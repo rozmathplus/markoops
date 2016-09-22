@@ -4,6 +4,8 @@ module.exports = {
         shorthandCompacting: false,
         roundingPrecision: -1
     },
+
+    // push site
     stylesHead: {
         files: [{
             '<%= temp %>/main.min.css': ['<%= temp %>/prioritizedBootstrap.css', '<%= temp %>/prioritized.css']
@@ -11,7 +13,8 @@ module.exports = {
     },
     stylesFooter: {
         files: [{
-            '<%= temp %>/general.min.css': ['<%= temp %>/notPrioritizedBootstrap.css', '<%= temp %>/notPrioritized.css']
+            '<%= site %>/general.min.css': ['<%= temp %>/notPrioritizedBootstrap.css', '<%= temp %>/notPrioritized.css']
         }]
     }
+    // end of push site
 };

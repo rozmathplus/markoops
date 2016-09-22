@@ -1,4 +1,5 @@
 module.exports = {
+	// dev
 	devProcess: {
 		tasks: [
 			'assemble:pages',
@@ -12,9 +13,11 @@ module.exports = {
 	        'imagemin:copyImages',
 		]
 	},
-	pushSiteFirst: {
+	// end of dev
+
+	// push site
+	prepareSiteFiles: {
 		tasks: [
-			'assemble:pagesSmall',
 			'sass:stylesPrioritizedBootstrap',
 			'sass:stylesNotPrioritizedBootstrap',
 			'sass:stylesPrioritizedMain',
@@ -22,13 +25,14 @@ module.exports = {
 	        'import:jsBootstrap',
 	        'import:jsJquery',
 	        'import:jsMain',
-	        'imagemin:copyImages',
+	        'imagemin:copySiteImages',
 		]
 	},
-	pushSiteSecond: {
+	minifyStyles: {
 		tasks: [
 			'cssmin:stylesHead',
-			'cssmin:stylesFooter',
+			'cssmin:stylesFooter'
 		]
 	}
+	// end of push site
 }

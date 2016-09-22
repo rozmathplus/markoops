@@ -14,7 +14,8 @@ module.exports = function(grunt) {
     require('load-grunt-config')(grunt, {
     	data: {
     		bowerComponents: 'bower_components',
-    		temp: 'temp',
+            temp: 'temp',
+    		site: 'site',
     		dev: 'dev',
     		styles: 'dev/styles',
     		scripts: 'dev/scripts',

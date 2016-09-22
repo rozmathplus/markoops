@@ -2,29 +2,16 @@ default:
     - 'exec:clearTerminal'
     - 'clean:temp'
     - 'concurrent:devProcess'
-
-    - 'cssmin:stylesHead'
-    - 'something'
-
     - 'connect:localhost'
     - 'focus:default'
 
 pushSite:
     - 'clean:temp'
-    - 'concurrent:pushSiteFirst'
-    - 'concurrent:pushSiteSecond'
-
-    - 'cssmin:stylesHead'
-    - 'something'
-
+    - 'clean:site'
+    - 'concurrent:prepareSiteFiles'
+    - 'concurrent:minifyStyles'
+    - 'grunttasks_inlineCssHead'
+    - 'uglify:scriptsFooter'
+    - 'assemble:pagesSite'
     - 'buildcontrol:pushSite'
 
-
-createMinCss:
-    - 'cssmin:stylesFooter'
-
-createMinCssHead:
-    - 'cssmin:stylesHead'
-
-readCss:
-    - 'ggrunt:something'

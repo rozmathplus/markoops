@@ -2,5 +2,6 @@ module.exports = {
 	options: {
 		'force': true
 	},
-    temp: ['<%= temp %>/*']
+    temp: ['<%= temp %>/*'],
+    site: ['<%= site %>/*']
 };
