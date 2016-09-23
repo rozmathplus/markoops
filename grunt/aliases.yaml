@@ -3,7 +3,6 @@ default:
     - 'clean:temp'
     - 'assemble:pages'
     - 'concurrent:prepareTempFiles'
-    - 'imagemin:copyImages'
     - 'connect:localhost'
     - 'focus:default'
 
@@ -15,7 +14,7 @@ pushSite:
     - 'grunttasks_inlineCssHead'
     - 'uglify:scriptsFooter'
     - 'assemble:pagesSite'
-    - 'imagemin:copySiteImages'
+    - 'import:imagesForSite'
     - 'buildcontrol:pushSite'
 
 test:

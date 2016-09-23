@@ -13,5 +13,9 @@ module.exports = {
     jsMain: {
     	src: ['<%= scripts %>/main.js'],
     	dest: '<%= temp %>/main.js'
+    },
+    imagesForSite: {
+        src: ['<%= temp %>/images'],
+        dest: '<%= site %>/images'
     }
 };
