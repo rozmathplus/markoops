@@ -9,7 +9,6 @@ module.exports = {
 	        'import:jsBootstrap',
 	        'import:jsJquery',
 	        'import:jsMain',
-	        'imagemin:copyImages',
 		]
 	},
 	// end of dev
