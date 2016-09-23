@@ -2,7 +2,8 @@
 module.exports = {
     options: {
         shorthandCompacting: false,
-        roundingPrecision: -1
+        roundingPrecision: -1,
+        keepSpecialComments: 0
     },
 
     // push site

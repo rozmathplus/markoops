@@ -1,17 +1,24 @@
 default:
     - 'exec:clearTerminal'
     - 'clean:temp'
-    - 'concurrent:devProcess'
+    - 'assemble:pages'
+    - 'concurrent:prepareTempFiles'
     - 'connect:localhost'
     - 'focus:default'
 
 pushSite:
     - 'clean:temp'
     - 'clean:site'
-    - 'concurrent:prepareSiteFiles'
+    - 'concurrent:prepareTempFiles'
     - 'concurrent:minifyStyles'
     - 'grunttasks_inlineCssHead'
     - 'uglify:scriptsFooter'
     - 'assemble:pagesSite'
     - 'buildcontrol:pushSite'
 
+test:
+    - 'clean:temp'
+    - 'clean:site'
+    - 'concurrent:prepareTempFiles'
+    - 'postcss:dev'
+    - 'concurrent:minifyStyles'
