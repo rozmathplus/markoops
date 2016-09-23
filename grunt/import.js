@@ -1,3 +1,4 @@
+// https://www.npmjs.com/package/grunt-import
 module.exports = {
     options: {
 
@@ -15,7 +16,9 @@ module.exports = {
     	dest: '<%= temp %>/main.js'
     },
     imagesForSite: {
-        src: ['<%= temp %>/images'],
-        dest: '<%= site %>/images'
+        expand: true,
+        cwd: '<%= temp %>/images/',
+        src: '*.{svg,png,jpg,gif}',
+        dest: '<%= site %>/images/'
     }
 };
