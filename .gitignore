@@ -1,5 +1,6 @@
+.sass-cache
 dev/bower_components
+dev/templates/parts/head/small/headInlineStyles.hbs
 node_modules
 site
 temp
-.sass-cache
