@@ -20,7 +20,8 @@ module.exports = function(grunt) {
     		styles: 'dev/styles',
     		scripts: 'dev/scripts',
     		grunt: 'grunt',
-            remoteRepo: remoteRepo
+            remoteRepo: remoteRepo,
+            imageFiles: '*.{svg,png,jpg,gif}'
     	}
     });
 };

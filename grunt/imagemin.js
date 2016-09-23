@@ -19,7 +19,7 @@ module.exports = {
         files: [{
         	expand: true,
 	        cwd: '<%= dev%>/images/',
-	        src: ['**/*.{svg,png,jpg,gif}'],
+	        src: ['**/<%= imageFiles %>'],
 	        dest: '<%= site %>/images/' 
         }]
     }

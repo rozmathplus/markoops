@@ -18,7 +18,7 @@ module.exports = {
     imagesForSite: {
         expand: true,
         cwd: '<%= temp %>/images/',
-        src: '*.{svg,png,jpg,gif}',
+        src: '<%= imageFiles %>',
         dest: '<%= site %>/images/'
     }
 };
