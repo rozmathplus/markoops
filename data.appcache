@@ -5,7 +5,7 @@ general.min.js
 images/markoops-logo2.svg
 
 NETWORK:
-login.html
+*
 
 FALLBACK:
-/html/ /offline.html
+/ offline.html
