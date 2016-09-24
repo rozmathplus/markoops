@@ -23,6 +23,6 @@ module.exports = {
     },
     cacheManifest: {
         src: ['<%= dev %>/templates/cache/data.appcache'],
-        dest: '<%= temp %>/data.appcache'
+        dest: '<%= site %>/data.appcache'
     }
 };
