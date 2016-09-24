@@ -12,7 +12,8 @@ module.exports = {
         	'stylesNotPrioritizedMain',
         	'stylesCustomBootstrap',
         	'stylesPrioritizedBootstrap',
-        	'stylesNotPrioritizedBootstrap'
+        	'stylesNotPrioritizedBootstrap',
+            'cacheManifest'
         ]
     }
 };

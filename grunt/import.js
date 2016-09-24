@@ -20,5 +20,9 @@ module.exports = {
         cwd: '<%= temp %>/images/',
         src: '<%= imageFiles %>',
         dest: '<%= site %>/images/'
+    },
+    cacheManifest: {
+        src: ['<%= dev %>/templates/cache/data.appcache'],
+        dest: '<%= temp %>/data.appcache'
     }
 };

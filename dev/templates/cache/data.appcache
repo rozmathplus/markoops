@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 24.09.2016 v1.0.0
+/general.min.css
+/general.min.js
+/images/markoops-logo2.svg
+
+NETWORK:
+login.html
+
+FALLBACK:
+/html/ /offline.html

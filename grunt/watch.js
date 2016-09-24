@@ -62,5 +62,11 @@ module.exports = {
     stylesNotPrioritizedBootstrap: {
         files: ['<%= styles %>/bootstrap/notPrioritizedBootstrap.scss'],
         tasks: ['sass:stylesNotPrioritizedBootstrap']
+    },
+
+    // cache
+    cacheManifest: {
+        files: ['<%= dev %>/templates/cache/data.appcache'],
+        tasks: ['cacheManifest', 'assemble:pages']
     }
 };
