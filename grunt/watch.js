@@ -68,5 +68,11 @@ module.exports = {
     cacheManifest: {
         files: ['<%= dev %>/templates/cache/data.appcache'],
         tasks: ['cacheManifest', 'assemble:pages']
+    },
+
+    // images
+    images: {
+        files: ['<%= dev %>/images/**/<%= imageFiles %>'],
+        tasks: ['imagemin:copyImages']
     }
 };

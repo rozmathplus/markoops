@@ -13,7 +13,8 @@ module.exports = {
         	'stylesCustomBootstrap',
         	'stylesPrioritizedBootstrap',
         	'stylesNotPrioritizedBootstrap',
-            'cacheManifest'
+            'cacheManifest',
+            'images'
         ]
     }
 };

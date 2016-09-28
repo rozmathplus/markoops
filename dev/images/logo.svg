@@ -67,5 +67,13 @@
        to="0"
        dur="2s"
        repeatCount="indefinite" />
+
+    <animate
+       attributeType="CSS"
+       attributeName="transform"
+       from="1"
+       to="0"
+       dur="2s"
+       repeatCount="indefinite" />
   </rect>
 </svg>
