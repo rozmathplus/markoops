@@ -1,10 +1,11 @@
+// https://github.com/assemble/grunt-assemble
 module.exports = {
     options: {
         flatten:    true,
         layout:     'default.hbs',
         layoutdir:  '<%= dev %>/templates/layouts',
         helpers:    '<%= dev %>/templates/helpers/helper-*.js',
-        partials:   '<%= dev %>/templates/parts/**/*.hbs'
+        partials:   ['<%= dev %>/templates/parts/**/*.hbs', '<%= temp %>/*.hbs']
     },
     pages: {
         files: {

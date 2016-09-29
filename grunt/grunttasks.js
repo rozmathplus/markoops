@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     var fromHeadFile = 'temp/main.min.css',
-        toHeadFile = 'dev/templates/parts/head/small/headInlineStyles.hbs';
+        // toHeadFile = 'dev/templates/parts/head/small/headInlineStyles.hbs';
+        toHeadFile = 'temp/headInlineStyles.hbs';
 
     grunt.registerTask('grunttasks_inlineCssHead', 'Inlining CSS files to Hbs', function() {
         var msg = 'Inlining CSS files to Hbs';

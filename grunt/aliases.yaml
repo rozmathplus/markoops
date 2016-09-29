@@ -25,5 +25,7 @@ test:
     - 'concurrent:minifyStyles'
     - 'grunttasks_inlineCssHead'
     - 'uglify:scriptsFooter'
+    - 'import:cacheManifest'
     - 'assemble:pagesSite'
     - 'import:imagesForSite'
+    # - 'buildcontrol:pushSite'
