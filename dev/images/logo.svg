@@ -1,79 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 141.42136 141.42136"
-   width="141.42136"
-   height="141.42136"
-   id="svg4191"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="logo.svg">
-  <metadata
-     id="metadata4205">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs4203" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
-     id="namedview4201"
-     showgrid="false"
-     inkscape:zoom="5.54375"
-     inkscape:cx="70.767046"
-     inkscape:cy="72.097373"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4191"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <rect
-     style="fill:#ec00ef;fill-opacity:1;fill-rule:nonzero"
-     id="rect4207"
-     width="100"
-     height="100"
-     x="-50"
-     y="50"
-     transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)">
-    <animate
-       attributeType="CSS"
-       attributeName="opacity"
-       from="1"
-       to="0"
-       dur="2s"
-       repeatCount="indefinite" />
+	id="svg4792"
+	xmlns="http://www.w3.org/2000/svg"
+	width="197.95468mm"
+	height="85.065788mm"
+	viewBox="0 0 700 300">
+	
+	<g
+		id="background"
+		fill="#fff"
+		fill-rule="evenodd"
+		stroke="#000">
 
-    <animate
-       attributeType="CSS"
-       attributeName="transform"
-       from="1"
-       to="0"
-       dur="2s"
-       repeatCount="indefinite" />
-  </rect>
+		<path
+			id="path-1"
+			d="M0 100 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".5">
+		</path>
+
+		<path
+			id="path-2"
+			d="M100 200 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".5">
+		</path>
+
+		<path
+			id="path-3"
+			d="M200 100 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".95">
+		</path>
+
+		<path
+			id="path-4"
+			d="M300 200 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".85">
+		</path>
+
+		<path
+			id="path-5"
+			d="M400 100 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".75">
+		</path>
+
+		<path
+			id="path-6"
+			d="M500 200 l100 100 l100 -100 l-100 -100z"
+			fill-opacity=".65">
+		</path>
+	</g>
+
+	<g
+		id="animation">
+
+		<path 
+			id="gum-1"
+			d="M0 100 l0 0 l100 -100 l0 0z"
+			fill="red"
+			fill-opacity=".15">
+
+			<animate 
+				id="anim-gum-1"
+				attributeName="d"
+				dur="11s"
+				repeatCount="indefinite"
+				begin="1.25s"
+				keyTimes="0; .025; .05; .075; .1; .125; .150; .175; 1"
+				calcMode="spline"
+				keySplines=".47,0,.745,.715; .39,.575,.565,1; .47,0,.745,.715; .39,.575,.565,1; .47,0,.745,.715; .39,.575,.565,1; .47,0,.745,.715; .39,.575,.565,1;"
+				values="M0 100 l0 0 l100 -100 l0 0z;
+						M0 100 l200 200 l100 -100 l-200 -200z;
+						M100 200 l100 100 l100 -100 l-100 -100z;
+						M100 200 l100 100 l200 -200 l-100 -100z;
+						M300 0 l100 100 l0 0 l-100 -100z;
+						M400 100 l200 200 l0 0 l-200 -200z;
+						M400 100 l200 200 l100 -100 l-200 -200z;
+						M500 0 l200 200 l0 0 l-200 -200z;
+						M500 0 l200 200 l0 0 l-200 -200z;"
+			/>
+		</path>
+	</g>
 </svg>
