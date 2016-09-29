@@ -1,15 +1,12 @@
 @import 'customVariables';
 
+// header section
 @import 'prioritized/header/header';
+@import 'prioritized/header/main-navigation';
 
+// main section
+@import 'prioritized/main/main';
+@import 'prioritized/main/logo';
 
-main {
-	background-color: $main-bg;
-	// color: $main-color;
-	display: flex;
-}
-
-footer {
-	// background-color: $footer-bg;
-	color: $footer-color;
-}
+// footer section
+@import 'prioritized/footer/footer';
