@@ -1,0 +1,20 @@
+// logo-top
+.logo-top {
+	float: right;
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+
+	img {
+		// @media (max-width: 991px) {
+		// 	width: 100px;
+		// }
+
+		@media (max-width: 991px) {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			width: 100px;
+		}
+	}
+}

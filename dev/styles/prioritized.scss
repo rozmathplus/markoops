@@ -3,10 +3,13 @@
 // header section
 @import 'prioritized/header/header';
 @import 'prioritized/header/main-navigation';
+@import 'prioritized/header/navbar-toogler';
 
 // main section
+@import 'prioritized/main/body';
 @import 'prioritized/main/main';
 @import 'prioritized/main/logo';
+@import 'prioritized/main/logo-top';
 
 // footer section
 @import 'prioritized/footer/footer';

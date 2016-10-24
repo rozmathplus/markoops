@@ -83,8 +83,8 @@ module.exports.register = function(Handlebars) {
 		var dataToReturn = '',
 			count = 1;
 		function renderChildren(node) {
-	    	dataToReturn += '<li class="nav-item ' + (node.hasActiveChild ? ' active' : '') + '">';
-	    	dataToReturn += '<a class="nav-link ' + (node.isCurrentPage ? ' active' : '') + '" href="' + node.basename + '.html">' + node.data.title + '</a>';
+	    	dataToReturn += '<li class="main-navigation__nav-item nav-item ' + (node.hasActiveChild ? ' active' : '') + '">';
+	    	dataToReturn += '<a class="main-navigation__nav-item-link nav-link ' + (node.isCurrentPage ? ' active' : '') + '" href="' + node.basename + '.html">' + node.data.title + '</a>';
 
 	    	var children = node.children;
 	    	if (children !== undefined && Object.keys(children).length) {

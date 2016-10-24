@@ -29,6 +29,10 @@ module.exports = {
         files: ['<%= scripts %>/main.js'],
         tasks: ['exec:clearTerminal', 'import:jsMain']
     },
+    jsDev: {
+        files: ['<%= scripts %>/**/*.js', '!<%= scripts %>/bootstrap.js', '!<%= scripts %>/jquery.js'],
+        tasks: ['exec:clearTerminal', 'import:jsMain']
+    },
 
     // Handlebars
     html: {

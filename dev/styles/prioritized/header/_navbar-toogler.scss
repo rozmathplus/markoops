@@ -1,0 +1,74 @@
+$button-height: 25px;
+$button-width: 25px;
+$line-height: 3px;
+
+.navbar-toggler {
+	position: relative;
+	box-sizing: content-box;
+	height: $button-height;
+	width: $button-width;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    &:focus {
+	    outline: 1px dotted;
+		outline: 5px auto #fff;
+    }
+
+	&:before,
+    &:after {
+    	content: '';
+    	position: absolute;
+    	height: $line-height;
+    	// width: 20px;
+    	background-color: #fff;
+    	left: .75rem;
+    	right: .75rem;
+	    transition: transform .4s ease;
+	    transform-origin: $line-height/2 $line-height/2;
+    }
+
+    &:before {
+    	top: .5rem;
+    }
+    &:after {
+    	bottom: .5rem;
+    }
+
+	&.collapsed {
+		&:before {
+			transform: rotate(0);
+		}
+		.navbar-toggler__span {
+			transform: scale(1, 1);
+		}
+		&:after {
+			transform: rotate(0);
+		}
+	}
+
+	&:not(.collapsed) {
+		&:before {
+			transform: rotate(45deg) scale(1.414, 1);
+		}
+		.navbar-toggler__span {
+			transform: scale(0, 1);
+		}
+		&:after {
+			transform: rotate(-45deg) scale(1.4, 1);
+		}
+	}
+
+	.navbar-toggler__span {
+		position: absolute;
+	    display: block;
+	    text-indent: -9999px;
+	    height: $line-height;
+	    left: .75rem;
+    	right: .75rem;
+	    margin-top: -$line-height/2;
+	    background-color: #fff;
+	    transition: transform .4s ease;
+	}
+}

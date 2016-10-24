@@ -6,6 +6,7 @@ module.exports = {
         	'jsMain',
         	'jsBootstrap',
         	'jsJquery',
+            'jsDev',
         	'html',
         	'stylesCustomMain',
         	'stylesPrioritizedMain',

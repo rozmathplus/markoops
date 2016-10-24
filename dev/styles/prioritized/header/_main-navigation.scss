@@ -1,13 +1,16 @@
 .main-navigation {
-	&.navbar {
-		ul {
-			// padding: 0;
-			list-style: none;
-		}
+	padding: 0;
+	
+	ul {
+		list-style: none;
 	}
-	.nav {
-
+	.navbar-nav .nav-item {
+		float: none;
 	}
+	.navbar-nav .nav-item + .nav-item {
+	    margin-left: 0;
+	}
+	
 	.nav-item {
 		&.active > .nav-link {
 			box-shadow: inset 0 -.25rem 0 0 #fff;

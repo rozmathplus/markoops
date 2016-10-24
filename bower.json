@@ -1,7 +1,7 @@
 {
     "name": "markoops__index-grunt",
     "devDependencies": {
-        "bootstrap": "v4.0.0-alpha.4",
+        "bootstrap": "v4.0.0-alpha.5",
         "jquery": "2.2.4"
     },
     "resolutions": {
